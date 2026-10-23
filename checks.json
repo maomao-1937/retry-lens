@@ -1,0 +1,43 @@
+[
+  {
+    "args": [
+      "retry_lens.py",
+      "--help"
+    ],
+    "exit": 0
+  },
+  {
+    "args": [
+      "retry_lens.py",
+      "examples/clean.jsonl",
+      "--format",
+      "json"
+    ],
+    "exit": 0
+  },
+  {
+    "args": [
+      "retry_lens.py",
+      "examples/findings.jsonl",
+      "--format",
+      "json"
+    ],
+    "exit": 1
+  },
+  {
+    "args": [
+      "retry_lens.py",
+      "examples/review.jsonl",
+      "--format",
+      "json"
+    ],
+    "exit": 1
+  },
+  {
+    "args": [
+      "retry_lens.py",
+      "examples/invalid.jsonl"
+    ],
+    "exit": 2
+  }
+]
